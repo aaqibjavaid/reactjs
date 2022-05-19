@@ -1,5 +1,5 @@
 import React from 'react'
-import { MovieList } from './MovieList'
+
 
 export const SearchBar = () => {
   return (
@@ -24,7 +24,7 @@ export const SearchBar = () => {
               placeholder='Search for movie by name'
               id="duration"
             />
-            <MovieList/>
+            
           </div>
     </div>
     <div>

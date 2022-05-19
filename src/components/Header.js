@@ -1,6 +1,5 @@
 import React from "react";
-import { MovieForm } from "./MovieForm";
-import { SearchBar } from "./SearchBar";
+
 
 export const Header = () => {
   return (
@@ -17,10 +16,7 @@ export const Header = () => {
       >
         <h1>Favorite Movie Directory</h1>
       </div>
-      <div style={{ display: "flex" }}>
-        <MovieForm />
-          <SearchBar />
-      </div>
+      
     </>
   );
 };

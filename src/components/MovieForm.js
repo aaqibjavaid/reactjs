@@ -26,7 +26,15 @@ export class MovieForm extends Component {
     })
   }
   submitData=event=>{
-    alert(`${this.state.movieName} ${this.state.rating} ${this.state.duration}`)
+    event.preventDefault();
+    if(this.state.movieName ==="" || this.state.rating ===""){
+      alert("All fields are mandatory")
+      return
+    }
+    this.props.movieHandler(this.state);
+    this.setState({movieName: "", rating:"", duration:""})
+    console.log(this.state)
+
   }
   render() {
     return (
